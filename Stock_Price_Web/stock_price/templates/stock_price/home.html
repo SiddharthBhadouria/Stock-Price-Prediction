@@ -1,0 +1,25 @@
+{% extends 'stock_price/parent.html'  %}
+{% block content  %}
+<html>
+    <title>
+        Stock Price prediction
+    </title>
+    <h1>
+        Welcome to stock price prediction!
+        
+    </h1>
+    <body>
+        <h4 style="font-size: 18;">
+            Increase your profit on stock with our program. 
+        </h4>
+        <form action = '/predictions/' method="get">
+            Enter your <a href="http://127.0.0.1:8000/stocks/"> stock ticker symbol</a> below : <input type="text" name = "stock_ticket"><br>
+            <input type = "submit">
+        </form>
+
+
+        
+    </body>
+</html>
+
+{% endblock content  %}
